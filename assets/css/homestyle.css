@@ -1,0 +1,67 @@
+/* Set height to 100% for body and html to enable the background image to cover the whole page: */
+body, html {
+    height: 100%
+}
+
+.homeBgimg {
+    /* Background image */
+    background-image: url("../images/background.jpg");
+    /* Full-screen */
+    opacity: 0.8;
+    height: 100%;
+    width: 100%;
+    left:0;
+    top:0;
+    /* Center the background image */
+    background-position: center;
+    /* Scale and zoom in the image */
+    background-size: cover;
+    /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
+    position: absolute;
+    /* Add a white text color to all elements inside the .homeBgimg container */
+    color: white;
+    /* Add a font */
+
+    font-family: Arial, Helvetica, sans-serif;
+    /* Set the font-size to 25 pixels */
+    font-size: 40px;
+}
+
+/* Position text in the top-left corner */
+.homeTopleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+    font-size: 20px;
+}
+
+/* Position text in the bottom-left corner */
+.homeBottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+}
+
+/* Position text in the middle */
+.homeMiddle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+p#worldCupTime {
+    background: rgba(128, 128, 128, 0.185);
+    opacity: 5;
+    border: .5vw solid #FFF;
+    padding: 5px;
+    font-size: 4vw;
+    font-family: 'Open Sans', sans-serif;
+}
+/* Style the <hr> element */
+hr {
+    margin: auto;
+    width: 40%;
+}
